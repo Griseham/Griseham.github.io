@@ -1,85 +1,364 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale">
+
+        <!-- Unicons-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+        <!-- Unicons-->
+
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="styles.css">
 
         <title>Resume Website</title>
-        
 
     </head>
     <body>
-        <!-- hero Section-->
-        <section id="hero">
-            <div class="hero container">
+
+        <!-- HEADER -->
+
+        <header class="header" id="header">
+            <nav class="nav container">
+
+                <a href="#" class="navLogo">Graham</a>
+                <div class="navMenu" id="navMenu">
+                    <ul class="navList grid">
+                        <li class="navItem">
+                            <a href="#about" class="navLink">
+                                <i class="uil uil-user navIcon"></i> About Me
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#skills" class="navLink">
+                                <i class="uil uil-brackets-curly navIcon "></i> Skills
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#portfolio" class="navLink">
+                                <i class="uil uil-circuit navIcon"></i> Portfolio
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#resume" class="navLink">
+                                <i class="uil uil-file navIcon"></i> Goals
+                            </a>
+                        </li>
+
+                    </ul>
+                    <i class="uil uil-times navClose " id="navClose" ></i>
+                </div>
+
+                <div class="nav__btns">
+                    <div class="navToggle" id="navToggle">
+                        <i class="uil uil-apps"></i>
+
+                    </div>
+                </div>
+
+            </nav>
+        </header>
+
+
+         <!-- HEADER END -->
+
+         <!-- Main -->
+
+         <main class="main">
+            <section class="home section" id="home">
+                <div class="homeContainer container grid">
+                    <div class="homeContent grid">
+                        <div class="homeSocial">
+                            <a href="https://www.linkedin.com/in/djimmitry-graham/" class="homeSocialIcon" target="_blank">
+                                <i class="uil uil-linkedin"></i>
+
+                            </a>
+                            <a href="https://github.com/Griseham" class="homeSocialIcon" target="_blank">
+                                <i class="uil uil-github"></i>
+                                
+                            </a>
+                        </div>
+
+                        <div class="homeData">
+                            <img src="img/profilePic2.jpeg" alt="">
+                            <h1 class="homeTitle">Hey, I'm Djimmitry Graham</h1>
+                            <h3 class="homeSubtitle">Software Engineer</h3>
+                            <p class="homeDescription">Description</p>
+                            <a href="#contact" class="button button--flex">
+                                Contact Me <i class="uil uil-forward buttonIcon"></i>
+                            </a>
+                        </div>
+
+                        
+                    </div>
+                    <div class="homeScroll">
+                        <a href="#about" class="homeScroll-button button--flex">
+                            <i class="uil uil-mouse-alt-2 homeScroll-mouse"></i>
+                            <span class="homeScroll-name">Scroll down</span>
+                            <i class="uil uil-arrow-down homeScroll-arrow"></i>
+
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+
+         </main>
+                  <!--  Main end-->
+
+        <!-- About -->
+        <section class="about section" id="about">
+            <h2 class="sectionTitle">About me</h2>
+            <span class="sectionSubtitle"> My Introduction</span>
+
+            <div class="aboutContainer container grid">
+                <img src="img/about.jpeg" alt="" class="aboutImg">
+
+                <div class="aboutData">
+                    <p class="aboutDescription">Lorem Ipsum
+                    </p>
+
+                    <div class="aboutInfo">
+                        <div>
+                            <span class="aboutInfo-title">December 2022</span>
+                            <span class="aboutInfo-name">Bachelor of Science <br> Computer Science</span>
+                        </div>
+                        <div>
+                            <span class="aboutInfo-title">December 2022</span>
+                            <span class="aboutInfo-name">Data Certificate <br> Computer Science Analytics</span>
+                        </div>
+                        
+                    </div>
+
+                    <div class="aboutButtons">
+                        <a download="" href="" class="button button--flex">
+                            Download Resume<i class="uil uil-import buttonIcon"></i>
+                        </a>
+
+                    </div>
+    
+    
+                    
+                </div>
+            </div>
+
+
+            
+        </section>
+
+        <!-- About end -->
+
+        <!-- skills  -->
+
+        <section class="skills section" id="skills">
+            <h2 class="sectionTitle">Skills</h2>
+            <span class="sectionSubtitle">My Technical level</span>
+
+            <div class="skillsContainer container grid">
                 <div>
-                    <h1>Welcome to my page,</h1> 
-                    <h1>I'm Djimmitry</h1>              
-                    <a href="#" type="button" class="cta">Portfolio</a>
+                    <!-- Skill 1-->
+                    <div class="skillsContent skillsOpen">
+                        <div class="skillsHeader">
+                            <i class="uil uil-align-center-h skillsIcon"></i>
+                            <div>
+                                <h1 class="skillsTitle">
+                                    Coding Languages</h1>
+                                    <span class="skillsSubtitle">More than 4 years</span>
+                            </div>
+
+                            <i class="uil uil-android-phone-slash skillsArrow"></i>
+
+                        </div>
+                        <div class="skillsList grid">
+                            <div class="skillsData">
+                                <div class="skillsTitles">
+                                    <h3 class="skillsName">HTML5</h3>
+                                    <span class="skillsNumber">90%</span>
+                                </div>
+                                <div class="skillsBar">
+                                    <span class="skillsPercentage skillsHtml"></span>
+                                </div>
+                            </div>
+                            <div class="skillsData">
+                                <div class="skillsTitles">
+                                    <h3 class="skillsName">HTML5</h3>
+                                    <span class="skillsNumber">90%</span>
+                                </div>
+                                <div class="skillsBar">
+                                    <span class="skillsPercentage skillsJS"></span>
+                                </div>
+                            </div>
+                            <div class="skillsData">
+                                <div class="skillsTitles">
+                                    <h3 class="skillsName">HTML5</h3>
+                                    <span class="skillsNumber">90%</span>
+                                </div>
+                                <div class="skillsBar">
+                                    <span class="skillsPercentage skillsPython"></span>
+                                </div>
+                            </div>
+                            <div class="skillsData">
+                                <div class="skillsTitles">
+                                    <h3 class="skillsName">HTML5</h3>
+                                    <span class="skillsNumber">90%</span>
+                                </div>
+                                <div class="skillsBar">
+                                    <span class="skillsPercentage skillsC++"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Skill 2-->
+                    <div class="skillsContent skillsClose">
+                        <div class="skillsHeader">
+                            <i class="uil uil-align-center-h skillsIcon"></i>
+                            <div>
+                                <h1 class="skillsTitle">Backend developer</h1>
+                                    <span class="skillsSubtitle">More than 4 years</span>
+                            </div>
+
+                            <i class="uil uil-android-phone-slash skillsArrow"></i>
+
+                        </div>
+                        <div class="skillsList grid">
+                            <div class="skillsData">
+                                <div class="skillsTitles">
+                                    <h3 class="skillsName">HTML5</h3>
+                                    <span class="skillsNumber">90%</span>
+                                </div>
+                                <div class="skillsBar">
+                                    <span class="skillsPercentage skillsHtml"></span>
+                                </div>
+                            </div>
+                            <div class="skillsData">
+                                <div class="skillsTitles">
+                                    <h3 class="skillsName">HTML5</h3>
+                                    <span class="skillsNumber">90%</span>
+                                </div>
+                                <div class="skillsBar">
+                                    <span class="skillsPercentage skillsJS"></span>
+                                </div>
+                            </div>
+                            <div class="skillsData">
+                                <div class="skillsTitles">
+                                    <h3 class="skillsName">HTML5</h3>
+                                    <span class="skillsNumber">90%</span>
+                                </div>
+                                <div class="skillsBar">
+                                    <span class="skillsPercentage skillsPython"></span>
+                                </div>
+                            </div>
+                            <div class="skillsData">
+                                <div class="skillsTitles">
+                                    <h3 class="skillsName">HTML5</h3>
+                                    <span class="skillsNumber">90%</span>
+                                </div>
+                                <div class="skillsBar">
+                                    <span class="skillsPercentage skillsC++"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <!--  end of hero Section-->
+        <!-- skills end -->
 
-        <!--  Service Section-->
-        <section id="services">
-            <div class="services container">
-                <div class="service-top">
-                    <h1 class="section-title">Services</h1>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium ad quod omnis ex magni
-                        non, soluta cupiditate suscipit culpa, sunt libero, natus maiores dolore totam! Consequatur vero 
-                        consequuntur nihil pariatur.
-                    </p>
-                </div>
-                <div class="service-bottom">
-                    <div class="service-item">
-                        <div class="icon"> <img src="img/codeIcon.png" width="100" height="100">
-                         </div>
-                         <h2>Web Design</h2>
-                         <p>
-                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolore repellat exercitationem possimus placeat rem harum nihil non obcaecati commodi laborum totam asperiores culpa veritatis, sequi iure accusamus. Dolorem, excepturi!
-                         </p>
+        <!-- Portfolio -->
 
+        <section class="portfolio section" id="portfolio">
+            <h2 class="sectionTitle">Portfolio </h2>
+            <span class="sectionSubtitle">Most recent work</span>
+
+            <div class="portfolioContainer container swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="portfolioContent grid swiper-slide Grafana">
+                        <img src="img/fauLibrary.png" alt="FAU Library" class="portfolioImg">
+
+                        <div class="portfolioData">
+                            <h3 class="portfolioTitle">AWS TwinMaker Project</h3>
+                            <p class="portfolioDescription">
+                                BRUH BRUH BRUH
+                            </p>
+                            <a href="download/AWS TwinMaker Project Final Demonstration.mp4" class="button button--flex button--small portfolioButton" download>
+                                Demo
+                                <i class="uil uil-arrow-right buttonIcon"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="service-item">
-                        <div class="icon"> <img src="img/codeIcon.png" width="100" height="100" >
-                         </div>
-                         <h2>Web Design</h2>
-                         <p>
-                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolore repellat exercitationem possimus placeat rem harum nihil non obcaecati commodi laborum totam asperiores culpa veritatis, sequi iure accusamus. Dolorem, excepturi!
-                         </p>
+                    <div class="portfolioContent grid swiper-slide sortingVisualizer">
+                        <img src="img/mergeSort.png" alt="Sorting Visualizer" class="portfolioImg">
 
-                    </div>   
-                    <div class="service-item">
-                        <div class="icon"> <img src="img/codeIcon.png" width="100" height="100">
-                         </div>
-                         <h2>Web Design</h2>
-                         <p>
-                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolore repellat exercitationem possimus placeat rem harum nihil non obcaecati commodi laborum totam asperiores culpa veritatis, sequi iure accusamus. Dolorem, excepturi!
-                         </p>
+                        <div class="portfolioData">
+                            <h3 class="portfolioTitle">Sorting Visualizer</h3>
+                            <p class="portfolioDescription">
+                                BRUH NO BRUH
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolioButton">
+                                Demo
+                                <i class="uil uil-arrow-right buttonIcon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolioContent grid swiper-slide stockApp">
+                        <img src="img/backtemp.jpeg" alt="" class="portfolioImg">
 
-                    </div>  
-                    <div class="service-item">
-                        <div class="icon"> <img src="img/codeIcon.png" width="100" height="100">
-                         </div>
-                         <h2>Web Design</h2>
-                         <p>
-                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolore repellat exercitationem possimus placeat rem harum nihil non obcaecati commodi laborum totam asperiores culpa veritatis, sequi iure accusamus. Dolorem, excepturi!
-                         </p>
+                        <div class="portfolioData">
+                            <h3 class="portfolioTitle">Modern Website</h3>
+                            <p class="portfolioDescription">
+                                BRUH BRUH BRUH
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolioButton">
+                                Demo
+                                <i class="uil uil-arrow-right buttonIcon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolioContent grid swiper-slide weatherApp">
+                        <img src="img/backtemp.jpeg" alt="" class="portfolioImg">
 
-                    </div>        
+                        <div class="portfolioData">
+                            <h3 class="portfolioTitle">Modern Website</h3>
+                            <p class="portfolioDescription">
+                                BRUH BRUH BRUH
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolioButton">
+                                Demo
+                                <i class="uil uil-arrow-right buttonIcon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                   
+
+                    
                 </div>
-            
+
+                <div>
+                    <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                </div>
+
+               
+
+                
+                
+
+                
+
+
+            </div>
         </section>
-        <!--  End Service Section-->
+
+         <!-- Portfolio end -->
 
 
 
 
+         <script src="js/swiper-bundle.min.js"></script>
 
-       
+        <script src="script.js"></script>
     </body>
 </html>
